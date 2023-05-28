@@ -1,0 +1,105 @@
+.container {
+    background-image: url('../../../assets//images/background_home.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100vw;
+    
+    .overview{
+        width: 600px;
+        @media(max-width:689px){
+            width: 100vw;
+        }
+    }
+    header{
+        width: 600px;
+        display: flex;
+        flex-direction: column;
+        height: 520px;
+        padding: 20px;
+        color: white;
+        justify-content: center;
+        align-items: center;
+        background: white;
+        gap: 0;
+        color: black;
+        box-shadow: 0 8px 10px rgba(0, 0, 0, 0.2);
+        @media(max-width:689px){
+            width: 100vw;
+        }
+        .container_principal_text{
+            padding-top: 20px;
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            font-size: 28px;
+            @media (max-width:500px) {
+                font-size: 20px;
+            }
+            @media(max-width:689px){
+                flex-direction: column;
+            }
+        }
+        
+        img{
+            border-radius: 50%;
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+        }
+        .container_role_text{
+            padding-top: 20px;
+            display: flex;
+            width: 100%;
+            justify-content: flex-end;
+            flex-direction: column;
+            gap: 10px;
+           
+            p{
+                font-size: 20px;
+                @media(max-width:689px){
+                    width: 80%;
+                    margin: 0 auto;
+                }
+            }
+            font-weight: 500;
+            span{
+                font-weight: 700;
+                color: var(--text_secondary);
+            }
+            .span_overview{
+                font-size: 38px;
+              
+            }
+        }
+        .overview{
+            display: flex;
+            flex-direction: column;
+            list-style: none;
+            height: 100%;
+           a{
+            text-decoration: none;
+            color: #000;
+            font-weight: 600;
+           }
+           a:hover{
+            color: var(--text_secondary);
+           }
+            gap: 10px;
+            font-size: 30px;
+            width: 100%;
+            div{
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                gap: 20px;
+                img{
+                    height: 80px;
+                    width: 80px;
+                }
+            }
+        }
+    }
+}

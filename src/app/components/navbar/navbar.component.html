@@ -1,0 +1,17 @@
+<nav>
+    <section class="nav_section_logo">
+        <h3>Francisco <span>Carranza</span></h3>
+    </section>
+    <div class="menu" (click)="showMenu=!showMenu">
+        <img src="../../../assets/icons/menu.svg" alt="menu">
+    </div>
+    <section class="nav_section_menu"  [ngClass]="{'show_menu': showMenu }">
+        <ul>
+            <li routerLink="home">Home</li>
+            <li>Firebase</li>
+            <li>Angular</li>
+            <li routerLink="about">About</li>
+            <li routerLink="contact">Contact</li>
+        </ul>
+    </section>
+</nav>
